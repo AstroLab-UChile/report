@@ -7,7 +7,7 @@
 .vscode
 
 # latex
-*.pdf
+report_template.pdf
 **.aux
 **.blg
 **.fdb_latexmk
