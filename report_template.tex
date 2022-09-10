@@ -6,8 +6,6 @@
     ]{article}
 
 \usepackage{aas_macros}
-\usepackage{natbib}
-\bibpunct{(}{)}{;}{a}{}{,}
 
 \usepackage{geometry}
 \geometry{
@@ -163,13 +161,7 @@ With some command lines you can make something like in Fig.~\ref{fig:my_tikz_fig
     \label{fig:my_tikz_fig}
 \end{figure}
 
-To add a citation we use the \textit{natbib} package, which is the standard way of citation in natural sciences, a citation example would be like this \citep{2022A&A...663A.106C}.
-\noindent The in-line citations are:
-\begin{itemize}
-    \item \citep{2022A&A...663A.106C}
-    \item \citet{2022A&A...663A.106C}
-    \item \citep[see][]{2022A&A...663A.106C}
-\end{itemize}
+To add a citation we use the \textit{bibtex} package, which is the standard way of citation in engineering, a citation example would be like this \cite{2022A&A...663A.106C}.
 
 \section{Units and describing quantities}
 
@@ -185,7 +177,7 @@ For more about the units see the online documentation \url{https://ctan.org/pkg/
 \section{Lipsum}
 \lipsum[2-4]
 
-\bibliographystyle{bibstyle_aa.bst}
+\bibliographystyle{IEEEtran}
 \bibliography{report_template}
 
 \end{document}
